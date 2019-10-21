@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CurrenVerter</string>
+    <string name="select_date">Choose date of history rate</string>
+</resources>

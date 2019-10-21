@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olgag.currencyconverter.fragments.FragTo"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/btnBitcoim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bitkoin"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/btnDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dollar"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/btnPound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pound"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/btnShekel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shekel"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/btnYena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yena"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/btnEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/euro"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/btnRub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rubl"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+    <SearchView
+        android:id="@+id/searchCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listCoins"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

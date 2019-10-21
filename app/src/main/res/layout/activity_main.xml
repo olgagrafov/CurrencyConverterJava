@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olgag.currencyconverter.activities.MainActivity"
+    android:background="#FFF7EFD5">
+    <LinearLayout
+        android:id="@+id/layoutMony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtCountForChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Alltxt"
+            android:hint="Money to convert"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/myRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Alltxt"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="Enter rate"
+            android:visibility="invisible"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_below="@+id/layoutMony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:id="@+id/fromLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/from"
+                    />
+
+                <TextView
+                    android:id="@+id/txtFrom"
+                    style="@style/Alltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal|left"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/toLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/to"                />
+
+                <TextView
+                    android:id="@+id/txtTo"
+                    style="@style/Alltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal|left"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btnSwap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/swap"
+            android:layout_weight="1"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mainLayout">
+
+    </FrameLayout>
+
+</RelativeLayout>
