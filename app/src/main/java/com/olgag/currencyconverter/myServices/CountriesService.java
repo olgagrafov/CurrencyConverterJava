@@ -3,9 +3,10 @@ package com.olgag.currencyconverter.myServices;
 import android.app.IntentService;
 import android.content.ContentValues;
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.annotation.Nullable;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
+import com.olgag.currencyconverter.R;
 import com.olgag.currencyconverter.db.DBCoinNameHelper;
 import com.olgag.currencyconverter.db.DbProvider;
 import com.olgag.currencyconverter.model.Coin;
@@ -35,7 +36,8 @@ public class CountriesService extends IntentService {
 
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
-        String urlString = "https://free.currencyconverterapi.com/api/v5/currencies?apiKey=1840888f7750147fbe8a" ;
+        String urlString ="https://free.currencyconverterapi.com/api/v5/currencies?apiKey="+getResources().getString(R.string.api_key);
+                // "https://free.currconv.com/api/v7/convert?q=USD_PHP&compact=ultra&apiKey=b2155f37d9b8bc66429b";
         ArrayList<Coin> listCountries=new ArrayList<>();
         HttpURLConnection connection = null;
         BufferedReader reader;

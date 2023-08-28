@@ -2,8 +2,10 @@ package com.olgag.currencyconverter.myServices;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.annotation.Nullable;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
+import com.olgag.currencyconverter.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,10 +33,9 @@ public class CurrencyServicr extends IntentService {
         double money=intent.getDoubleExtra("putMoney",0);
 
 
-        String urlString ="https://free.currencyconverterapi.com/api/v5/convert?apiKey=1840888f7750147fbe8a&compact=y&q=" +putCurrency;
+        String urlString ="https://free.currencyconverterapi.com/api/v5/convert?apiKey="+getResources().getString(R.string.api_key)+"&compact=y&q="+putCurrency;
+                //"https://free.currencyconverterapi.com/api/v5/convert?apiKey=b2155f37d9b8bc66429b&compact=y&q="+putCurrency;
                 //"https://free.currencyconverterapi.com/api/v5/convert?apiKey=1840888f7750147fbe8a&compact=y&q=USD_PHP" ;
-
-
         HttpURLConnection connection = null;
         BufferedReader reader;
         StringBuilder builder = new StringBuilder();

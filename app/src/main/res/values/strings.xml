@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CurrenVerter</string>
     <string name="select_date">Choose date of history rate</string>
+    <string name="api_key">9664e439a6c7708fd118</string>
 </resources>

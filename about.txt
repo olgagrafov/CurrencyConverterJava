@@ -1,0 +1,14 @@
+
+Introducing "CurrenVerter" - a user-friendly and versatile app that will be your perfect travel companion. With its simple interface and easy-to-use features, "CurrenVerter" makes currency conversion a breeze wherever you go.
+
+Key Features:
+
+Comprehensive Currency Rates: Access almost all currency rates from around the world, ensuring you stay updated with the latest exchange rates.
+
+Real-time Data: Our app fetches currency rates from the reliable source - "https://free.currencyconverterapi.com/" - ensuring accuracy and reliability.
+
+Offline Currency Conversion: No internet? No problem! "CurrenVerter" allows you to perform self-conversions even when you are offline, making it truly reliable on the go.
+
+Special Thanks: A heartfelt thanks to "Icons8" for providing the beautifully crafted icons that perfectly complement our app's design.
+
+Download "CurrenVerter" now and experience the convenience of currency conversion right at your fingertips!
